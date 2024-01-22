@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 
-import "./globals.css";
+import "../globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -18,11 +18,13 @@ const inter = Inter({
 
 export default function RootLayout({
   children,
+  params: {locale}
 }: {
   children: React.ReactNode;
+  params: {locale: string};
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang={locale} className={inter.className}>
       <body>{children}</body>
       <Analytics />
     </html>

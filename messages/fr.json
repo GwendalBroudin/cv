@@ -1,0 +1,16 @@
+{
+  "school": {
+    "name": "ENIB (Ecole Nationnale d'Ingénieurs de Brest)"
+  },
+  "about": "Ingénieur fullstack JS et Unity",
+  "work": {
+    "1": {
+      "title": "Senior Full Stack Developer"
+    },
+    "badge": "À distance"
+  },
+  "titles": {
+    "about": "Présentation",
+    "work": "Expérience professionnelle"
+  }
+}
