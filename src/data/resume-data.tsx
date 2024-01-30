@@ -29,8 +29,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
     about: t('about'),
     summary:
       "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-    avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-    personalWebsiteUrl: "https://jarocki.me",
+    avatarUrl: "https://avatars.githubusercontent.com/u/7550782?v=4",
     contact: {
       email: "gwendalbroudin@gmail.com",
       tel: "+330633383827",
@@ -50,17 +49,17 @@ export function getResumeData(t: (k: string, data?: any) => string) {
     education: [
       {
         school: t('school.name'),
-        degree: "Bachelor's Degree in Control systems engineering and Robotics",
-        start: "2007",
-        end: "2010",
+        degree: t('school.degree'),
+        start: "2011",
+        end: "2017",
       },
     ],
     work: [
       {
         company: "Emoko",
         link: "https://emoko.io",
-        badges: [t('work.badge')],
-        title: t('work.1.title'),
+        badges: [],
+        title: t('work.emoko.title'),
         logo: EmokoLogo,
         start: "2021",
         end: "2024",

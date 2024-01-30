@@ -1,13 +1,17 @@
 {
   "school": {
-    "name": "ENIB (Ecole Nationnale d'Ingénieurs de Brest)"
+    "name": "ENIB (Ecole Nationnale d'Ingénieurs de Brest)",
+    "degree": "Diplôme d'ingénieur en informatique spécialisé en Model Driven Architecture er Réalité Virtuelle. Formation généraliste en informatique, électronique et mécanique."
   },
-  "about": "Ingénieur fullstack JS et Unity",
+  "about": "Ingénieur fullstack WEB | Cloud | XR",
   "work": {
     "1": {
       "title": "Senior Full Stack Developer"
     },
-    "badge": "À distance"
+    "badge": "À distance",
+    "emoko": {
+      "title": "Lead Tech WEB et Unity"
+    }
   },
   "titles": {
     "about": "Présentation",

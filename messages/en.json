@@ -1,10 +1,17 @@
 {
-  "about": "Fullstack JS and Unity engineer",
+  "about": "Fullstack WEB | Cloud | XR software engineer",
   "work": {
-    "badge": "Remote"
+    "badge": "Remote",
+    "emoko": {
+      "title": "Lead WEB and Unity developer"
+    }
   },
   "titles": {
     "about": "About",
     "work": "Work Experience"
+  },
+  "school": {
+    "degree": "Computer engineering degree specializing in Model Driven Architecture and Virtual Reality. \nGeneral training in IT, electronics and mechanics.",
+    "name": "ENIB (National School of Engineers of Brest, France)"
   }
 }
