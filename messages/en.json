@@ -3,7 +3,25 @@
   "work": {
     "badge": "Remote",
     "emoko": {
-      "title": "Lead WEB and Unity developer"
+      "title": "Lead WEB and Unity developer",
+      "description": "Infrastructure design and software architecture. Training of development teams. Schedules management (sprint + road maps). \nTechnologies: Unity3D, WebGL, GLTF, GCP, Kubernetes."
+    },
+    "exakis": {
+      "description": "Construction of the Mixed Reality commercial offer in partnership with Microsoft. \nLeadDev Unity3D and Junior Azure Cloud Architect. \nHololens Expert: Training, advice, prototyping and development on different uses in mixed reality. \nTechnologies: Unity3D, Hololens, Azure Cloud, Azure DevOps, Azure AD, Terraform, Docker, React, Angular, SQL, ASP.NET Core",
+      "title": "Senior Consultant",
+      "badges": {
+        "0": "Consuting",
+        "1": "Industry",
+        "2": "Energy"
+      }
+    },
+    "wiztivi": {
+      "description": "Responsible for parental control and episode screen features for the Liberty Global group's TV box interface. \nRedesign of MVVM data binding (internal framework). \nTechnologies: JavaScript, Node.js, SDL2",
+      "title": "Frontend Developer"
+    },
+    "bib": {
+      "description": "Development of the BIM Bloc in Bloc solution. \nClient: SNCF Immobilier, Bouygues ES, Eiffage, Léon Grosse",
+      "title": "Unity3D Developer"
     }
   },
   "titles": {
@@ -19,17 +37,50 @@
     "sectionTitle": "Skills"
   },
   "projects": {
-    "sectionTitle": "Projects"
-  },
-  "action": {
-    "print": {
-      "title": "Print"
+    "sectionTitle": "Projects",
+    "emokoPlayer": {
+      "description": "WEB application to visit and configure accommodations in virtual reality. \nHigh quality photo realistic renderings."
+    },
+    "schneider": {
+      "description": "Recognition of different electrical equipment on HoloLens for technicians from the Schneider group. \nAugmented reality display with spatial persistence"
+    },
+    "emokoPlatform": {
+      "description": "Management platform. \nSales monitoring, TMA invoice generation, prospect management, account administration..."
+    },
+    "emokoAutomation": {
+      "description": "Agents based on Unity Editor for pre-computing renderings and converting/optimizing assets. \nQueue system and horizontal scaling on GCP."
+    },
+    "dncg": {
+      "title": "Accounting platform",
+      "description": "SAAS solution intended for accounting entry of L1 and L2 clubs of the LFP for the LFP/DNCG. \nReal-time synchronization. \nTechlead for a team of 5 people. \nStrong involvement in software architecture."
+    },
+    "total": {
+      "description": "Study for Total Energies. \nFeasibility of a digital twin displayed in XR of a refinery. \nArchitecture proposal for integration with the IS (management of 3D models, spatialization, technical data, etc.)."
+    },
+    "vivatech": {
+      "description": "Creation of HoloLens demonstration applications for the Exakis-Nelite stand at the Vivatech show 3 years in a row. \nProvision of internal Unity and Hololens training. \nThemes: Spatial, Construction/BIM, Industry 4.0"
+    },
+    "saintGobain": {
+      "description": "SAAS solution to manage guest accounts of the Saint Gobain group. \nHighly secure serverless architecture with strong optimization of hosting costs."
+    },
+    "bib": {
+      "description": "Modular mixed reality BIM solution. \nSuperposition of the 3D model on the real building for smartphone and HoloLens. \nVirtual reality tour. \nShared business logic (filtering, annotations, etc.). \nImportant monitoring of augmented reality equipment and algorithms."
     }
   },
   "actions": {
-    "print": "To print"
+    "print": "Print document",
+    "links": "Links",
+    "actions": "Actions",
+    "noResults": "No result...",
+    "search": "Type to search..."
   },
   "hobby": {
     "sectionTitle": "Hobbies"
+  },
+  "description": "Fullstack developer passionate about the cloud and mixed reality. \nI like working on innovative and ambitious projects. \nCurious by nature, I like to be constantly learning. \nI am very comfortable with Angular, Unity and Node.js. \nI am very autonomous and I like working in a team.",
+  "exakis": {
+    "badges": {
+      "2": ""
+    }
   }
 }

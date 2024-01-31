@@ -5,14 +5,28 @@
     "sectionTitle": "Formation"
   },
   "about": "Ingénieur fullstack WEB | Cloud | XR",
+  "description": "Développeur fullstack passionné par le cloud et la réalité mixte. J'aime travailler sur des projets innovants et ambitieux. Curieux de nature, j'aime être en constant apprentissage. Je suis très à l'aise avec Angular, Unity et Node.js. Je suis très autonome et j'aime travailler en équipe.",
   "work": {
-    "1": {
-      "title": "Tech lead 3D et WEB"
-    },
-    "badge": "À distance",
     "emoko": {
       "title": "Lead Tech WEB et Unity",
-      "description": "Développeur fullstack passionné par le cloud et la réalité mixte. J'aime travailler sur des projets innovants et ambitieux. Curieux de nature, j'aime être en constant apprentissage. Je suis très à l'aise avec Angular, Unity et Node.js. Je suis très autonome et j'aime travailler en équipe."
+      "description": "Conception de l'infrastructure et l'architecture logicielle. Formation des équipes de développement. Gestion des plannings (sprints + road map). Technologies: Unity3D, WebGL, GLTF, GCP, Kubernetes."
+    },
+    "exakis": {
+      "title": "Consultant Sénior",
+      "description": "Construction de l’offre commerciale Réalité Mixte en partenariat avec Microsoft. LeadDev Unity3D et Architecte junior Azure Cloud. Expert Hololens : Formation, conseil, prototypage et développement sur différents usages en réalité mixte. Technologies: Unity3D, Hololens, Azure Cloud, Azure DevOps, Azure AD, Terraform, Docker, React, Angular, SQL, ASP.NET Core",
+      "badges": {
+        "0": "Conseil",
+        "1": "Industrie",
+        "2": "Énergie"
+      }
+    },
+    "wiztivi": {
+      "title": "Développeur Front",
+      "description": "Responsable des features contrôle parentale et écran épisodes pour l’interface des boxes TV du groupe Liberty Global. Refonte du data binding MVVM (framework interne). Technologies: JavaScript, Node.js, SDL2"
+    },
+    "bib": {
+      "title": "Développeur Unity3D",
+      "description": "Développement de la solution BIM Bloc in Bloc. Client: SNCF  Immobilier, Bouygues ES, Eiffage, Léon Grosse"
     }
   },
   "titles": {
@@ -23,7 +37,35 @@
     "sectionTitle": "Compétences"
   },
   "projects": {
-    "sectionTitle": "Projets"
+    "sectionTitle": "Projets",
+    "emokoPlayer": {
+      "description": "Application WEB pour visiter et configurer des logements en réalité virtuelle. Rendus photo réaliste haute qualité."
+    },
+    "emokoAutomation": {
+      "description": "Agents basé sur Unity Editor pour le pré-calcul de rendus et la conversion/ optimization des assets. Système de queue et scaling horizontale sur GCP."
+    },
+    "emokoPlatform": {
+      "description": "Plateforme de gestion. Suivi des ventes, génération de facture TMA, gestion des prospects, administrations des comptes..."
+    },
+    "schneider": {
+      "description": "Reconnaissance de différents équipements électriques sur HoloLens pour les techniciens du groupe groupe Schneider. Affichage en réalité augmentée avec persistance spatiale"
+    },
+    "saintGobain": {
+      "description": "Solution SAAS pour gérer les comptes invités du groupe Saint Gobain. Architecture serverless hautement sécurisée avec une forte optimisation des coûts d’hébergement."
+    },
+    "vivatech": {
+      "description": "Création d’applications de démonstration HoloLens pour le stand d’Exakis-Nelite au salon Vivatech 3 ans de suite. Dispense de formations internes Unity et Hololens. Thématiques: Spatial, BTP/BIM, Industrie 4.0"
+    },
+    "total": {
+      "description": "Étude pour le Total Energies. Faisabilité d'un digital twin affiché en XR d'une raffinerie. Proposition d'architecture pour l'intégration avec le SI (gestion des modèles 3D, spatialisation, données techniques ...)."
+    },
+    "dncg": {
+      "description": "Solution SAAS destinée à la saisie comptable des clubs L1 et L2 de la LFP pour la LFP/DNCG. Synchronisation en temps réel. Techlead pour une équipe de 5 personnes. Forte implication dans l’architecture logicielle.",
+      "title": "Plateforme comptable"
+    },
+    "bib": {
+      "description": "Solution BIM en réalité mixte modulaire. Superposition de la maquette 3D au bâtiment réel pour smartphone et HoloLens. Visite en réalité virtuelle. Logique métier mutualisée (filtrage, annotations ...). Veille importante sur les équipements et algorithmes de réalité augmentée."
+    }
   },
   "actions": {
     "print": "Imprimer",

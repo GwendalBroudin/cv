@@ -10,7 +10,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
     location: "Nantes, France",
     locationLink: "https://www.google.com/maps/place/Nantes",
     about: t("about"),
-    summary: t("work.emoko.description"),
+    summary: t("description"),
     avatarUrl: "https://avatars.githubusercontent.com/u/7550782?v=4",
     contact: {
       email: "gwendalbroudin@gmail.com",
@@ -45,41 +45,37 @@ export function getResumeData(t: (k: string, data?: any) => string) {
         logo: Emoko,
         start: "2021",
         end: "2024",
-        description:
-          "Conception de l'infrastructure et l'architecture logicielle. Formation des équipes de développement. Gestion des plannings (sprints + road map). Technologies: Unity3D, WebGL, GLTF, VContainer, Cloud Function, Cloud Run",
+        description: t("work.emoko.description"),
       },
       {
         company: "Exakis Nelite",
         link: "http://www.exakis-nelite.com/",
-        badges: ["Industrie", "Conseil", "Énergie"],
-        title: "Consultant Sénior",
+        badges: [t('work.exakis.badges.0'),t('work.exakis.badges.1'),  t('work.exakis.badges.2')],
+        title: t("work.exakis.title"),
         logo: Exakis,
         start: "2018",
         end: "2021",
-        description:
-          "Construction de l’offre commerciale Réalité Mixte en partenariat avec Microsoft. LeadDev Unity3D et Architecte junior Azure Cloud. Expert Hololens : Formation, conseil, prototypage et développement sur différents usages en réalité mixte. Technologies: Unity3D, Hololens, Azure Cloud, Azure DevOps, Azure AD, Terraform, Docker, React, Angular, SQL, ASP.NET Core",
+        description: t("work.exakis.description"),
       },
       {
         company: "Wiztivi",
         link: "https://www.wiztivi.com",
         badges: ["Entertainment", "TV"],
-        title: "Développeur Front",
+        title: t("work.wiztivi.title"),
         logo: Wiztivi,
         start: "2017",
         end: "2018",
-        description:
-          "Responsable des features contrôle parentale et écran épisodes pour l’interface des boxes TV du groupe Liberty Global. Refonte du data binding MVVM (framework interne). Technologies: JavaScript, Node.js, SDL2",
+        description: t("work.wiztivi.description"),
       },
       {
         company: "Bloc in Bloc",
         link: "https://www.sogelink.com/solution/bloc-in-bloc/",
         badges: ["BIM", "VR", "AR"],
-        title: "Développeur Unity3D",
+        title: t("work.bib.title"),
         logo: Exakis,
         start: "2017",
         end: "2016",
-        description:
-          "Développement de la solution BIM Bloc in Bloc. Client: SNCF  Immobilier, Bouygues ES, Eiffage, Léon Grosse",
+        description: t("work.bib.description"),
       },
     ],
     skills: [
@@ -118,7 +114,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "VContainer",
           "UniRX",
         ],
-        description: `Application WEB pour visiter et configurer des logements en réalité virtuelle. Rendus photo réaliste haute qualité.`,
+        description: t("projects.emokoPlayer.description"),
         logo: Emoko,
         link: {
           label: "emoko",
@@ -136,8 +132,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "GLTF",
           "IFC",
         ],
-        description:
-          "Agents basé sur Unity Editor pour le pré-calcul de rendus et la conversion/ optimization des assets. Système de queue et scaling horizontale sur GCP.",
+        description: t("projects.emokoAutomation.description"),
         logo: Emoko,
         link: {
           label: "emoko",
@@ -157,8 +152,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "Terraform",
           "CI/CD",
         ],
-        description:
-          "Plateforme de gestion. Suivi des ventes, génération de facture TMA, gestion des prospects, administrations des comptes...",
+        description: t("projects.emokoPlatform.description"),
         logo: Exakis,
         link: {
           label: "emoko",
@@ -167,15 +161,14 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       },
       {
         type: "XR",
-        title: "Electric equipment XR",
+        title: "Electric equipments XR",
         techStack: [
           "Azure Custom Vision",
           "Azure Spatial Anchor",
           "HoloLens",
           "Unity",
         ],
-        description:
-          "Reconnaissance de différents équipements électriques sur HoloLens pour les techniciens du groupe groupe Schneider. Affichage en réalité augmentée avec persistance spatiale",
+        description: t("projects.schneider.description"),
         logo: Exakis,
         link: {
           label: "Schneider Electric",
@@ -191,8 +184,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "HoloLens",
           "Unity",
         ],
-        description:
-          "Solution SAAS pour gérer les comptes invités du groupe Saint Gobain. Architecture serverless hautement sécurisée avec une forte optimisation des coûts d’hébergement.",
+        description: t("projects.saintGobain.description"),
         logo: Exakis,
         link: {
           label: "Schneider Electric",
@@ -203,8 +195,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
         type: "XR",
         title: "Vivatech 2018/19/20",
         techStack: ["HoloLens", "Unity", "Azure spatial anchor"],
-        description:
-          "Création d’applications de démonstration HoloLens pour le stand d’Exakis-Nelite au salon Vivatech 3 ans de suite. Dispense de formations internes Unity et Hololens. Thématiques: Spatial, BTP/BIM, Industrie 4.0",
+        description: t("projects.vivatech.description"),
         logo: Exakis,
         link: {
           label: "magellan-partners.eu",
@@ -215,8 +206,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
         type: "XR",
         title: "Tigital Twin XR",
         techStack: ["HoloLens", "MS. Remote Assists", "Azure spatial anchor"],
-        description:
-          "Étude pour le Total Energies. Faisabilité d'un digital twin affiché en XR d'une raffinerie. Proposition d'architecture pour l'intégration avec le SI (gestion des modèles 3D, spatialisation, données techniques ...).",
+        description: t("projects.total.description"),
         logo: Exakis,
         link: {
           label: "getyearprogress.com",
@@ -225,7 +215,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       },
       {
         type: "WEB",
-        title: "Plateforme comptable",
+        title: t('projects.dncg.title'),
         techStack: [
           "Lead Developer",
           "CosmosDB",
@@ -233,8 +223,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "Angular",
           "GraphQL",
         ],
-        description:
-          "Solution SAAS destinée à la saisie comptable des clubs L1 et L2 de la LFP pour la LFP/DNCG. Synchronisation en temps réel. Techlead pour une équipe de 5 personnes. Forte implication dans l’architecture logicielle.",
+        description: t("projects.dncg.description"),
         logo: Exakis,
         link: {
           label: "lfp.fr",
@@ -253,7 +242,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "Android/IOS",
         ],
         description:
-          "Solution BIM en réalité mixte modulaire. Superposition de la maquette 3D au bâtiment réel pour smartphone et HoloLens. Visite en réalité virtuelle. Logique métier mutualisée (filtrage, annotations ...). Veille importante sur les équipements et algorithmes de réalité augmentée.",
+          t('projects.bib.description'),
         logo: Exakis,
         link: {
           label: "lfp.fr",
