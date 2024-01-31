@@ -10,10 +10,8 @@ export function getResumeData(t: (k: string, data?: any) => string) {
     location: "Nantes, France",
     locationLink: "https://www.google.com/maps/place/Nantes",
     about: t("about"),
-    summary:
-      "Développeur fullstack passionné par le cloud et la réalité mixte. J'aime travailler sur des projets innovants et ambitieux. Curieux de nature, j'aime être en constant apprentissage. Je suis très à l'aise avec les technologies Microsoft et j'ai une bonne connaissance des technologies web. Je suis très autonome et j'aime travailler en équipe.",
+    summary: t("work.emoko.description"),
     avatarUrl: "https://avatars.githubusercontent.com/u/7550782?v=4",
-    personalWebsiteUrl: "https://jarocki.me",
     contact: {
       email: "gwendalbroudin@gmail.com",
       tel: "+330633383827",
@@ -53,7 +51,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       {
         company: "Exakis Nelite",
         link: "http://www.exakis-nelite.com/",
-        badges: ["Industrie 4.0", "IoT", "XR", "Cloud"],
+        badges: ["Industrie", "Conseil", "Énergie"],
         title: "Consultant Sénior",
         logo: Exakis,
         start: "2018",
@@ -80,7 +78,8 @@ export function getResumeData(t: (k: string, data?: any) => string) {
         logo: Exakis,
         start: "2017",
         end: "2016",
-        description: "Développement de la solution BIM Bloc in Bloc. Client: SNCF  Immobilier, Bouygues ES, Eiffage, Léon Grosse",
+        description:
+          "Développement de la solution BIM Bloc in Bloc. Client: SNCF  Immobilier, Bouygues ES, Eiffage, Léon Grosse",
       },
     ],
     skills: [
@@ -169,7 +168,12 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       {
         type: "XR",
         title: "Electric equipment XR",
-        techStack: ["Azure Custom Vision","Azure Spatial Anchor" ,"HoloLens", "Unity"],
+        techStack: [
+          "Azure Custom Vision",
+          "Azure Spatial Anchor",
+          "HoloLens",
+          "Unity",
+        ],
         description:
           "Reconnaissance de différents équipements électriques sur HoloLens pour les techniciens du groupe groupe Schneider. Affichage en réalité augmentée avec persistance spatiale",
         logo: Exakis,
@@ -181,7 +185,12 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       {
         type: "WEB",
         title: "Guest management",
-        techStack: ["Azure Custom Vision","Azure Spatial Anchor" ,"HoloLens", "Unity"],
+        techStack: [
+          "Azure Custom Vision",
+          "Azure Spatial Anchor",
+          "HoloLens",
+          "Unity",
+        ],
         description:
           "Solution SAAS pour gérer les comptes invités du groupe Saint Gobain. Architecture serverless hautement sécurisée avec une forte optimisation des coûts d’hébergement.",
         logo: Exakis,
@@ -206,7 +215,8 @@ export function getResumeData(t: (k: string, data?: any) => string) {
         type: "XR",
         title: "Tigital Twin XR",
         techStack: ["HoloLens", "MS. Remote Assists", "Azure spatial anchor"],
-        description: "Étude pour le Total Energies. Faisabilité d'un digital twin affiché en XR d'une raffinerie. Proposition d'architecture pour l'intégration avec le SI (gestion des modèles 3D, spatialisation, données techniques ...).",
+        description:
+          "Étude pour le Total Energies. Faisabilité d'un digital twin affiché en XR d'une raffinerie. Proposition d'architecture pour l'intégration avec le SI (gestion des modèles 3D, spatialisation, données techniques ...).",
         logo: Exakis,
         link: {
           label: "getyearprogress.com",
@@ -249,6 +259,32 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           label: "lfp.fr",
           href: "https://www.lfp.fr/",
         },
+      },
+    ],
+    hobbies: [
+      {
+        name: "Jonglage",
+        link: null,
+      },
+      {
+        name: "Vélo",
+        link: null,
+      },
+      {
+        name: "Roller Dance",
+        link: null,
+      },
+      {
+        name: "Cuisine",
+        link: "https://www.letelegramme.fr/finistere/les-quatre-moulins-29200/span-cuisinebien-span-le-fait-maison-des-etudiants-2115898.php",
+      },
+      {
+        name: "Concerts",
+        link: null,
+      },
+      {
+        name: "Spectacles vivants",
+        link: null,
       },
     ],
   } as const;

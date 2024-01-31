@@ -1,6 +1,6 @@
 {
   "school": {
-    "name": "ENIB (Ecole Nationnale d'Ingénieurs de Brest)",
+    "name": "Ecole Nationale d'Ingénieurs de Brest",
     "degree": "Diplôme d'ingénieur en informatique spécialisé en Architecture Logicielle (MDA) et Réalité Virtuelle. Formation généraliste en informatique, électronique et mécanique.",
     "sectionTitle": "Formation"
   },
@@ -11,7 +11,8 @@
     },
     "badge": "À distance",
     "emoko": {
-      "title": "Lead Tech WEB et Unity"
+      "title": "Lead Tech WEB et Unity",
+      "description": "Développeur fullstack passionné par le cloud et la réalité mixte. J'aime travailler sur des projets innovants et ambitieux. Curieux de nature, j'aime être en constant apprentissage. Je suis très à l'aise avec Angular, Unity et Node.js. Je suis très autonome et j'aime travailler en équipe."
     }
   },
   "titles": {
@@ -23,5 +24,15 @@
   },
   "projects": {
     "sectionTitle": "Projets"
+  },
+  "actions": {
+    "print": "Imprimer",
+    "links": "Liens",
+    "actions": "Actions",
+    "noResults": "Aucun résultat...",
+    "search": "Commencez à taper pour filtrer les résultats..."
+  },
+  "hobby": {
+    "sectionTitle": "Hobbies"
   }
 }

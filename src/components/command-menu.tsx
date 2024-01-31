@@ -14,12 +14,23 @@ import {
 import { Button } from "./ui/button";
 import { CommandIcon } from "lucide-react";
 
-interface Props {
-  links: { url: string; title: string }[];
+export interface CommandLabels {
+  print: string;
+  actions: string;
+  links: string;
+  noResults: string;
+  search: string;
 }
 
-export const CommandMenu = ({ links }: Props) => {
+interface Props {
+  links: { url: string; title: string }[];
+  labels:CommandLabels ;
+
+}
+
+export const CommandMenu = ({ links, labels }: Props) => {
   const [open, setOpen] = React.useState(false);
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -32,9 +43,12 @@ export const CommandMenu = ({ links }: Props) => {
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
   }, []);
-
-  
-
+  React.useEffect(() => {
+    if (open) {
+      console.log("useEffect", inputRef.current);
+      inputRef.current?.blur();
+    }
+  }, [open]);
   return (
     <>
       <Button
@@ -46,20 +60,20 @@ export const CommandMenu = ({ links }: Props) => {
         <CommandIcon className="my-6 size-6" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Type a command or search..." />
+        <CommandInput placeholder={labels.search} ref={ inputRef }/>
         <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Actions">
+          <CommandEmpty>{labels.noResults}</CommandEmpty>
+          <CommandGroup heading={labels.actions}>
             <CommandItem
               onSelect={() => {
                 setOpen(false);
                 window.print();
               }}
             >
-              <span>Print</span>
+              <span>{labels.print}</span>
             </CommandItem>
           </CommandGroup>
-          <CommandGroup heading="Links">
+          <CommandGroup heading={labels.links}>
             {links.map(({ url, title }) => (
               <CommandItem
                 key={url}

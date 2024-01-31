@@ -20,5 +20,16 @@
   },
   "projects": {
     "sectionTitle": "Projects"
+  },
+  "action": {
+    "print": {
+      "title": "Print"
+    }
+  },
+  "actions": {
+    "print": "To print"
+  },
+  "hobby": {
+    "sectionTitle": "Hobbies"
   }
 }

@@ -1,4 +1,4 @@
-import { CommandMenu } from "@/components/command-menu";
+import { CommandLabels, CommandMenu } from "@/components/command-menu";
 import { ProjectCard } from "@/components/project-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -12,8 +12,8 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 type Props = {
-  params: { locale: string }
-}
+  params: { locale: string };
+};
 
 export async function generateMetadata(
   { params: { locale } }: Props,
@@ -31,9 +31,9 @@ export default function Page() {
   const t = useTranslations();
   const RESUME_DATA = getResumeData(t);
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 print:pb-0 print:m-0 md:p-16">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-4 print:pb-0 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-x-0">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
@@ -102,25 +102,25 @@ export default function Page() {
             </div>
           </div>
 
-          <Avatar className="size-28">
+          <Avatar className="size-24 sm:size-32">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">{t('titles.about')}</h2>
+          <h2 className="text-xl font-bold">{t("titles.about")}</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">{t('titles.work')}</h2>
+          <h2 className="text-xl font-bold">{t("titles.work")}</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                    <h3 className="inline-flex flex-1 flex-wrap items-center gap-1 font-semibold leading-none">
                       <a className="hover:underline" href={work.link}>
                         {work.company}
                       </a>
@@ -154,13 +154,13 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">{t('school.sectionTitle')}</h2>
+          <h2 className="text-xl font-bold">{t("school.sectionTitle")}</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
+                    <h3 className="flex-1 font-semibold  leading-none">
                       {education.school}
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
@@ -173,8 +173,22 @@ export default function Page() {
             );
           })}
         </Section>
+        
+        <Section className="hidden print:flex">
+          <h2 className="text-xl font-bold">{t("hobby.sectionTitle")}</h2>
+          <p className="text-pretty font-mono text-sm text-muted-foreground flex justify-between flex-wrap">
+            {RESUME_DATA.hobbies.map((hobby) => (
+              hobby.link ?
+              <a key={hobby.name} href={hobby.link} target="_blank">{hobby.name} </a>
+              : <span key={hobby.name}> {hobby.name} </span>
+            ))}
+          </p>
+        </Section>
+        
         <Section>
-          <h2 className="print-force-new-page text-xl font-bold">{t('skills.sectionTitle')}</h2>
+          <h2 className="print-force-new-page text-xl font-bold">
+            {t("skills.sectionTitle")}
+          </h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
@@ -183,7 +197,7 @@ export default function Page() {
         </Section>
 
         <Section className="scroll-mb-16">
-          <h2 className="text-xl font-bold">{t('projects.sectionTitle')}</h2>
+          <h2 className="text-xl font-bold">{t("projects.sectionTitle")}</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -198,13 +212,20 @@ export default function Page() {
             })}
           </div>
         </Section>
+        <Section className="print:hidden">
+          <h2 className="text-xl font-bold">{t("hobby.sectionTitle")}</h2>
+          <p className="text-pretty font-mono text-sm text-muted-foreground flex justify-between flex-wrap">
+            {RESUME_DATA.hobbies.map((hobby) => (
+              hobby.link ?
+              <a key={hobby.name} href={hobby.link} target="_blank">{hobby.name} </a>
+              : <span key={hobby.name}> {hobby.name} </span>
+            ))}
+          </p>
+        </Section>
       </section>
       <CommandMenu
+        labels={t.raw("actions")}
         links={[
-          {
-            url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
-          },
           ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
             url: socialMediaLink.url,
             title: socialMediaLink.name,
