@@ -1,7 +1,8 @@
 {
   "school": {
     "name": "ENIB (Ecole Nationnale d'Ingénieurs de Brest)",
-    "degree": "Diplôme d'ingénieur en informatique spécialisé en Model Driven Architecture er Réalité Virtuelle. Formation généraliste en informatique, électronique et mécanique."
+    "degree": "Diplôme d'ingénieur en informatique spécialisé en Architecture Logicielle (MDA) et Réalité Virtuelle. Formation généraliste en informatique, électronique et mécanique.",
+    "sectionTitle": "Formation"
   },
   "about": "Ingénieur fullstack WEB | Cloud | XR",
   "work": {
@@ -16,5 +17,11 @@
   "titles": {
     "about": "Présentation",
     "work": "Expérience professionnelle"
+  },
+  "skills": {
+    "sectionTitle": "Compétences"
+  },
+  "projects": {
+    "sectionTitle": "Projets"
   }
 }

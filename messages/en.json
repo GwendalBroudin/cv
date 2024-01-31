@@ -11,7 +11,14 @@
     "work": "Work Experience"
   },
   "school": {
-    "degree": "Computer engineering degree specializing in Model Driven Architecture and Virtual Reality. \nGeneral training in IT, electronics and mechanics.",
-    "name": "ENIB (National School of Engineers of Brest, France)"
+    "degree": "Computer engineering degree specializing in Model Driven Architecture and Virtual Reality. General training in IT, electronics and mechanics.",
+    "name": "ENIB (National School of Engineers of Brest, France)",
+    "sectionTitle": "Education"
+  },
+  "skills": {
+    "sectionTitle": "Skills"
+  },
+  "projects": {
+    "sectionTitle": "Projects"
   }
 }
