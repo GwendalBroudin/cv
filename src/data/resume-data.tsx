@@ -141,7 +141,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       },
       {
         type: "WEB",
-        title: "Emoko platform",
+        title: "Emoko Platform",
         techStack: [
           "Angular",
           "Nest.js",
@@ -204,7 +204,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
       },
       {
         type: "XR",
-        title: "Tigital Twin XR",
+        title: "Digital Twin XR",
         techStack: ["HoloLens", "MS. Remote Assists", "Azure spatial anchor"],
         description: t("projects.total.description"),
         logo: Exakis,
