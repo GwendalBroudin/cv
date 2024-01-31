@@ -5,6 +5,7 @@ import BimLogo from "./bim.png";
 import CDGOLogo from "./cdgo.png";
 import ClevertechLogo from "./clevertech.png";
 import EvercastLogo from "./evercast.svg";
+import Emoko from "./emoko.png";
 import Howdy from "./howdy.png";
 import JarockiMeLogo from "./jarocki.svg";
 import JojoMobileLogo from "./jojomobile.png";
@@ -23,6 +24,7 @@ export {
   BimLogo,
   CDGOLogo,
   ClevertechLogo,
+  Emoko,
   EvercastLogo,
   Howdy,
   JarockiMeLogo,
