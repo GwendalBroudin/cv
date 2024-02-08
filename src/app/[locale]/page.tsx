@@ -1,5 +1,6 @@
-import { CommandLabels, CommandMenu } from "@/components/command-menu";
+import { CommandMenu } from "@/components/command-menu";
 import { ProjectCard } from "@/components/project-card";
+import { TranslationButton, getTranslationsButtonData } from "@/components/translation-button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 type Props = {
-  params: { locale: string };
+  params: { locale: 'en' | 'fr' };
 };
 
 export async function generateMetadata(
@@ -27,12 +28,14 @@ export async function generateMetadata(
   };
 }
 
-export default function Page() {
+export default function Page(p: Props) {
   const t = useTranslations();
   const RESUME_DATA = getResumeData(t);
+  const flag = getTranslationsButtonData(p.params.locale);
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-4 print:pb-0 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-4 print:pb-0 md:p-16 md:pt-0 pt-0">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6 ">
+        <TranslationButton lang={p.params.locale} />
         <div className="flex items-center justify-between gap-x-0">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -173,18 +176,18 @@ export default function Page() {
             );
           })}
         </Section>
-        
+
         <Section className="hidden print:flex">
           <h2 className="text-xl font-bold">{t("hobby.sectionTitle")}</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground flex justify-between flex-wrap">
             {RESUME_DATA.hobbies.map((hobby) => (
               hobby.link ?
-              <a key={hobby.name} href={hobby.link} target="_blank">{hobby.name} </a>
-              : <span key={hobby.name}> {hobby.name} </span>
+                <a key={hobby.name} href={hobby.link} target="_blank">{hobby.name} </a>
+                : <span key={hobby.name}> {hobby.name} </span>
             ))}
           </p>
         </Section>
-        
+
         <Section>
           <h2 className="print-force-new-page text-xl font-bold">
             {t("skills.sectionTitle")}
@@ -214,11 +217,11 @@ export default function Page() {
         </Section>
         <Section className="print:hidden">
           <h2 className="text-xl font-bold">{t("hobby.sectionTitle")}</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground flex justify-between flex-wrap">
+          <p className="text-pretty font-mono text-sm text-muted-foreground flex justify-between flex-wrap gap-2">
             {RESUME_DATA.hobbies.map((hobby) => (
               hobby.link ?
-              <a key={hobby.name} href={hobby.link} target="_blank">{hobby.name} </a>
-              : <span key={hobby.name}> {hobby.name} </span>
+                <a key={hobby.name} href={hobby.link} target="_blank">{hobby.name} </a>
+                : <span key={hobby.name}> {hobby.name} </span>
             ))}
           </p>
         </Section>
@@ -230,6 +233,11 @@ export default function Page() {
             url: socialMediaLink.url,
             title: socialMediaLink.name,
           })),
+          {
+            url: flag.link,
+            title: flag.label,
+            target: "_self",
+          }
         ]}
       />
     </main>

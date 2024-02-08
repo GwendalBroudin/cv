@@ -23,7 +23,7 @@ export interface CommandLabels {
 }
 
 interface Props {
-  links: { url: string; title: string }[];
+  links: { url: string; title: string; target?: "_blank" | "_self" }[];
   labels:CommandLabels ;
 
 }
@@ -74,12 +74,12 @@ export const CommandMenu = ({ links, labels }: Props) => {
             </CommandItem>
           </CommandGroup>
           <CommandGroup heading={labels.links}>
-            {links.map(({ url, title }) => (
+            {links.map(({ url, title, target = "_blank"}) => (
               <CommandItem
                 key={url}
                 onSelect={() => {
                   setOpen(false);
-                  window.open(url, "_blank");
+                  window.open(url, target);
                 }}
               >
                 <span>{title}</span>
