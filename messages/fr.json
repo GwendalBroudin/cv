@@ -75,6 +75,25 @@
     "search": "Commencez à taper pour filtrer les résultats..."
   },
   "hobby": {
-    "sectionTitle": "Hobbies"
-  }
+    "sectionTitle": "Hobbies",
+    "juggling": {
+      "name": "Jonglage"
+    },
+    "bike": {
+      "name": "Vélo"
+    },
+    "roller": {
+      "name": "Roller Dance"
+    },
+    "cooking": {
+      "name": "Cuisine"
+    },
+    "concerts": {
+      "name": "Concerts"
+    },
+    "show": {
+      "name": "Spectacles vivants"
+    }
+  },
+  "languages": ["Français", "Anglais"]
 }

@@ -12,6 +12,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
     about: t("about"),
     summary: t("description"),
     avatarUrl: "https://avatars.githubusercontent.com/u/7550782?v=4",
+    spokenLanuages: [t('languages.0'), t('languages.1')],
     contact: {
       email: "gwendalbroudin@gmail.com",
       tel: "+330633383827",
@@ -252,27 +253,27 @@ export function getResumeData(t: (k: string, data?: any) => string) {
     ],
     hobbies: [
       {
-        name: "Jonglage",
+        name: t('hobby.juggling.name'),
         link: null,
       },
       {
-        name: "Vélo",
+        name: t('hobby.bike.name'),
         link: null,
       },
       {
-        name: "Roller Dance",
+        name: t('hobby.roller.name'),
         link: null,
       },
       {
-        name: "Cuisine",
+        name: t('hobby.cooking.name'),
         link: "https://www.letelegramme.fr/finistere/les-quatre-moulins-29200/span-cuisinebien-span-le-fait-maison-des-etudiants-2115898.php",
       },
       {
-        name: "Concerts",
+        name: t('hobby.concerts.name'),
         link: null,
       },
       {
-        name: "Spectacles vivants",
+        name: t('hobby.show.name'),
         link: null,
       },
     ],

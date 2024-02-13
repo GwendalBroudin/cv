@@ -74,7 +74,27 @@
     "search": "Type to search..."
   },
   "hobby": {
-    "sectionTitle": "Hobbies"
+    "sectionTitle": "Hobbies",
+    "juggling": {
+      "name": "Juggling"
+    },
+    "bike": {
+      "name": "Biking"
+    },
+    "roller": {
+      "name": "Roller Dance"
+    },
+    "cooking": {
+      "name": "Cooking"
+    },
+    "concerts": {
+      "name": "Concerts"
+    },
+    "show": {
+      "name": "Live entertainment"
+    }
   },
   "description": "As a fullstack developer passionate about cloud computing and mixed reality, I have more than 7 years of experience. I am very comfortable with Angular, Unity, Node.js and .NET. I like working on innovative and ambitious projects. Curious by nature, I’m always willing to learn new topic. Autonomous, I thrive in team environments."
+  ,
+  "languages": ["French", "English"]
 }

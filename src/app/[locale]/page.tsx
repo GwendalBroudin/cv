@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { getResumeData } from "@/data/resume-data";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, Languages, LanguagesIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Metadata, ResolvingMetadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -41,6 +41,9 @@ export default function Page(p: Props) {
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {RESUME_DATA.about}
+            </p>
+            <p className="inline-flex gap-x-1.5 align-baseline leading-none max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
+              <LanguagesIcon className="size-3"/>  {RESUME_DATA.spokenLanuages.join(", ")}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
               <a
