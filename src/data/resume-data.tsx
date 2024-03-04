@@ -180,16 +180,19 @@ export function getResumeData(t: (k: string, data?: any) => string) {
         type: "WEB",
         title: "Guest management",
         techStack: [
-          "Azure Custom Vision",
-          "Azure Spatial Anchor",
-          "HoloLens",
-          "Unity",
+          "Angular",
+          "Fluent UI",
+          "Azure Cloud Functions",
+          "Azure Table Storage",
+          "ASP.NET Core",
+          "Azure AD B2C",
+          "Terraform"
         ],
         description: t("projects.saintGobain.description"),
         logo: Exakis,
         link: {
-          label: "Schneider Electric",
-          href: "https://www.se.com/",
+          label: "Saint Gobin",
+          href: "https://www.saint-gobain.com/",
         },
       },
       {
