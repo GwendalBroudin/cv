@@ -57,7 +57,7 @@
       "description": "Création d’applications de démonstration HoloLens pour le stand d’Exakis-Nelite au salon Vivatech 3 ans de suite. Dispense de formations internes Unity et Hololens. Thématiques: Spatial, BTP/BIM, Industrie 4.0"
     },
     "total": {
-      "description": "Étude pour le Total Energies. Faisabilité d'un digital twin affiché en XR d'une raffinerie. Proposition d'architecture pour l'intégration avec le SI (gestion des modèles 3D, spatialisation, données techniques ...)."
+      "description": "Étude pour Total Energies. Faisabilité d'un digital twin d'une raffinerie affiché en XR. Proposition d'architecture pour l'intégration avec le SI (gestion des modèles 3D, spatialisation, données techniques ...)."
     },
     "dncg": {
       "description": "Solution SAAS destinée à la saisie comptable des clubs L1 et L2 de la LFP pour la LFP/DNCG. Synchronisation en temps réel. Techlead pour une équipe de 5 personnes. Forte implication dans l’architecture logicielle.",

@@ -54,7 +54,7 @@
       "description": "SAAS solution intended for accounting entry of L1 and L2 clubs of the LFP for the LFP/DNCG. Real-time synchronization. Techlead for a team of 5 people. Strong involvement in software architecture."
     },
     "total": {
-      "description": "Study for Total Energies. Feasibility of a digital twin displayed in XR of a refinery. Architecture proposal for integration with the IS (management of 3D models, spatialization, technical data, etc.)."
+      "description": "Study for Total Energies. Feasibility of a digital twin of a refinery displayed in XR. Architecture proposal for integration with the IS (management of 3D models, spatialization, technical data, etc.)."
     },
     "vivatech": {
       "description": "Creation of HoloLens demonstration applications for the Exakis-Nelite stand at the Vivatech show 3 years in a row. Provision of internal Unity and Hololens training. Themes: Spatial, Construction/BIM, Industry 4.0"
