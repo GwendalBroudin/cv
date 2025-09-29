@@ -7,6 +7,15 @@
   "about": "Ingénieur fullstack WEB | Cloud | XR",
   "description": "Développeur fullstack passionné par le cloud et la réalité mixte, j'ai plus de 7h d'expérience. Je suis très à l'aise avec Angular, Unity, Node.js et .NET. J'aime travailler sur des projets innovants et ambitieux. Curieux de nature, j'aime être en constant apprentissage.  Je suis très autonome et j'aime travailler en équipe.",
   "work": {
+    "amaris": {
+      "title": "Consultant Sénior",
+      "description": "Team Lead .NET, participation active au recrutements de l'agence, missions en tant que techlead, analyste technique et DevOps. Technologies: Kubernetes, Azure Cloud, Azure DevOps, Terraform, Docker, React, Angular, SQL, ASP.NET Core",
+      "badges": {
+        "0": "Conseil",
+        "1": "Gouvernement",
+        "2": "Énergie"
+      }
+    },
     "emoko": {
       "title": "Lead Tech WEB et Unity",
       "description": "Conception de l'infrastructure et l'architecture logicielle. Formation des équipes de développement. Gestion des plannings (sprints + road map). Technologies: Unity3D, WebGL, GLTF, GCP, Kubernetes."
@@ -22,7 +31,11 @@
     },
     "wiztivi": {
       "title": "Développeur Front",
-      "description": "Responsable des features contrôle parentale et écran épisodes pour l’interface des boxes TV du groupe Liberty Global. Refonte du data binding MVVM (framework interne). Technologies: JavaScript, Node.js, SDL2"
+      "description": "Responsable des features contrôle parentale et écran épisodes pour l’interface des boxes TV du groupe Liberty Global. Refonte du data binding MVVM (framework interne). Technologies: JavaScript, Node.js, SDL2",
+      "badges": {
+        "0": "Entertainment",
+        "1": "TV"
+      }
     },
     "bib": {
       "title": "Développeur Unity3D",
@@ -38,6 +51,12 @@
   },
   "projects": {
     "sectionTitle": "Projets",
+    "elia": {
+      "description": "Migration d'applications hostée dans Azure et On Prem vers le cloud privé d'Elia. Mise en place de GitOps avec ArgoCD and Helm pour la gestion des déploiements."
+    },
+    "ibz": {
+      "description": "Technical analyste et techlead sur la refonte du système de gestion des visa au bureau de l'immigration Belge (IBZ)."
+    },
     "emokoPlayer": {
       "description": "Application WEB pour visiter et configurer des logements en réalité virtuelle. Rendus photo réaliste haute qualité."
     },
@@ -95,5 +114,8 @@
       "name": "Spectacles vivants"
     }
   },
-  "languages": ["Français", "Anglais"]
+  "languages": [
+    "Français",
+    "Anglais"
+  ]
 }

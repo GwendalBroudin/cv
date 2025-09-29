@@ -9,18 +9,31 @@
       "description": "Construction of the Mixed Reality commercial offer in partnership with Microsoft. LeadDev Unity3D and Junior Azure Cloud Architect. Hololens Expert: Training, advice, prototyping and development on different uses in mixed reality. Technologies: Unity3D, Hololens, Azure Cloud, Azure DevOps, Azure AD, Terraform, Docker, React, Angular, SQL, ASP.NET Core",
       "title": "Senior Consultant",
       "badges": {
-        "0": "Consuting",
+        "0": "Consulting",
         "1": "Industry",
         "2": "Energy"
       }
     },
     "wiztivi": {
       "description": "Responsible for parental control and episode screen features for the Liberty Global group's TV box interface. Redesign of MVVM data binding (internal framework). Technologies: JavaScript, Node.js, SDL2",
-      "title": "Frontend Developer"
+      "title": "Frontend Developer",
+      "badges": {
+        "0": "Entertainment",
+        "1": "TV"
+      }
     },
     "bib": {
       "description": "Development of the BIM Bloc in Bloc solution. Client: SNCF Immobilier, Bouygues ES, Eiffage, Léon Grosse",
       "title": "Unity3D Developer"
+    },
+    "amaris": {
+      "description": "Team Lead .net, involved in the agency recruitments, missions as Techlead, Technical Analyst and DevOps. \nTechnologies: Kubernetes, Azure Cloud, Azure Devops, Terraform, Docker, React, Angular, SQL, Asp.net Core",
+      "title": "Senior consultant",
+      "badges": {
+        "0": "Consulting",
+        "1": "Government",
+        "2": "Energy"
+      }
     }
   },
   "titles": {
@@ -37,6 +50,9 @@
   },
   "projects": {
     "sectionTitle": "Projects",
+    "ibz": {
+      "description": "Technical Analyst and Techlead on the redesgin of the visa management system at the Belgian Immigration Office (IBZ)."
+    },
     "emokoPlayer": {
       "description": "WEB application to visit and configure accommodations in virtual reality. High quality photo realistic renderings."
     },
@@ -64,6 +80,9 @@
     },
     "bib": {
       "description": "Modular mixed reality BIM solution. Superposition of the 3D model on the real building for smartphone and HoloLens. Virtual reality tour. Shared business logic (filtering, annotations, etc.). Important monitoring of augmented reality equipment and algorithms."
+    },
+    "elia": {
+      "description": "Migration of applications hosted in Azure and on premise to the private cloud of Elia. Implementation of gitops with ArgoCd and Helm for the management of deployments."
     }
   },
   "actions": {
@@ -94,7 +113,9 @@
       "name": "Live entertainment"
     }
   },
-  "description": "As a fullstack developer passionate about cloud computing and mixed reality, I have more than 7 years of experience. I am very comfortable with Angular, Unity, Node.js and .NET. I like working on innovative and ambitious projects. Curious by nature, I’m always willing to learn new topic. Autonomous, I thrive in team environments."
-  ,
-  "languages": ["French", "English"]
+  "description": "As a fullstack developer passionate about cloud computing and mixed reality, I have more than 7 years of experience. I am very comfortable with Angular, Unity, Node.js and .NET. I like working on innovative and ambitious projects. Curious by nature, I’m always willing to learn new topic. Autonomous, I thrive in team environments.",
+  "languages": [
+    "French",
+    "English"
+  ]
 }
