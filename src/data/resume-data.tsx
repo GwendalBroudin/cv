@@ -124,7 +124,7 @@ export function getResumeData(t: (k: string, data?: any) => string) {
           "Kafka",
           "PostgreSQL",
         ],
-        description: t("projects.ibz.description"),
+        description: t("projects.elia.description"),
         link: {
           label: "emoko",
           href: "https://www.elia.be/",
