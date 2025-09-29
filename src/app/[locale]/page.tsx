@@ -160,7 +160,7 @@ export default function Page(p: Props) {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">{t("school.sectionTitle")}</h2>
+          <h2 className="print-force-new-page text-xl font-bold">{t("school.sectionTitle")}</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -192,7 +192,7 @@ export default function Page(p: Props) {
         </Section>
 
         <Section>
-          <h2 className="print-force-new-page text-xl font-bold">
+          <h2 className="text-xl font-bold">
             {t("skills.sectionTitle")}
           </h2>
           <div className="flex flex-wrap gap-1">
@@ -203,7 +203,7 @@ export default function Page(p: Props) {
         </Section>
 
         <Section className="scroll-mb-16">
-          <h2 className="text-xl font-bold">{t("projects.sectionTitle")}</h2>
+          <h2 className="print-force-new-page text-xl font-bold">{t("projects.sectionTitle")}</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
