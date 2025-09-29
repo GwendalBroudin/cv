@@ -7,8 +7,8 @@ export function getResumeData(t: (k: string, data?: any) => string) {
   return {
     name: "Gwendal Broudin",
     initials: "GB",
-    location: "Nantes, France",
-    locationLink: "https://www.google.com/maps/place/Nantes",
+    location: "Brussels, Belgium",
+    locationLink: "https://www.google.com/maps/place/Brussels",
     about: t("about"),
     summary: t("description"),
     avatarUrl: "https://avatars.githubusercontent.com/u/7550782?v=4",
